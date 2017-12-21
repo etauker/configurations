@@ -32,13 +32,22 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
 
 
+
 # Windows Settings
 '.platform-win32 atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
 
-  '.platform-win32 atom-workspace atom-text-editor:not([mini])':
-    'ctrl-up': 'editor:move-line-up'
-    'ctrl-down': 'editor:move-line-down'
+'.platform-win32 atom-workspace atom-text-editor:not([mini])':
+  'ctrl-up': 'editor:move-line-up'
+  'ctrl-down': 'editor:move-line-down'
+
+'.platform-win32 body':
+  'ctrl-shift-T': 'pane:reopen-closed-item'
+
+'.platform-win32':
+  'ctrl-t': 'fuzzy-finder:toggle-file-finder'
+
+
 
 # MacOS Settings
 '.platform-darwin atom-text-editor':
@@ -48,6 +57,14 @@
   'cmd-up': 'editor:move-line-up'
   'cmd-down': 'editor:move-line-down'
 
+'.platform-darwin body':
+  'cmd-shift-T': 'pane:reopen-closed-item'
+
+'.platform-darwin':
+  'cmd-t': 'fuzzy-finder:toggle-file-finder'
+
+
+
 # Linux Settings
 '.platform-linux atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
@@ -55,3 +72,9 @@
 '.platform-linux atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'editor:move-line-up'
   'ctrl-down': 'editor:move-line-down'
+
+'.platform-linux body':
+  'ctrl-shift-T': 'pane:reopen-closed-item'
+
+'.platform-linux':
+  'ctrl-t': 'fuzzy-finder:toggle-file-finder'
