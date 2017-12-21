@@ -4,16 +4,13 @@
 #                                                                   #
 #####################################################################
 
-alias subl='/Volumes/Macintosh/Applications/Programming/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias spr='/Volumes/Internal-Workspace/dev-tools/sts-bundle/STS.app'
-alias ecl='/Volumes/Internal-Workspace/dev-tools/Eclipse.app'
-alias rst='/Volumes/Internal-Workspace/dev-tools/RStudio.app'
-alias ws='cd /Volumes/Internal-Workspace/projects'
-
-#alias ls='ls -GFh'
-#alias ll='ls -l'
-#alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddunderscores-osx.sh'
-
+# alias subl='/Volumes/Macintosh/Applications/Programming/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+# alias spr='/Volumes/Internal-Workspace/dev-tools/sts-bundle/STS.app'
+# alias ecl='/Volumes/Internal-Workspace/dev-tools/Eclipse.app'
+# alias rst='/Volumes/Internal-Workspace/dev-tools/RStudio.app'
+alias atom='/Applications/Atom.app/Contents/Resources/app/atom.sh'
+# alias ws='cd /Volumes/Internal-Workspace/projects'
+alias ws='cd ~/Projects'
 
 
 #####################################################################
@@ -81,7 +78,7 @@ NEXT_LINE="\n\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;7m\]$\[$(tput sgr0)\]";
 export PS1="$TIME $USER $DIR $BRANCH $NEXT_LINE";
 export PS2="\[$(tput bold)\]\[\033[38;5;7m\]>\[$(tput sgr0)\]"
 
-# LS_COLORS=$LS_COLORS:'di=47;90:'; 
+# LS_COLORS=$LS_COLORS:'di=47;90:';
 # export LS_COLORS
 
 
@@ -97,7 +94,7 @@ fi
 #export GIT_PS1_SHOWDIRTYSTATE=yes
 
 
-#FILES: 
+#FILES:
 #di = directory
 #fi = file
 #ln = symbolic link
