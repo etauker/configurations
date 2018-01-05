@@ -36,6 +36,7 @@
 # Windows Settings
 '.platform-win32 atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
+  'ctrl-shift-d': 'user:insert-date'
 
 '.platform-win32 atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'editor:move-line-up'
@@ -52,6 +53,7 @@
 # MacOS Settings
 '.platform-darwin atom-text-editor':
   'cmd-m': 'markdown-preview:toggle'
+  'cmd-shift-d': 'user:insert-date'
 
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
   'cmd-up': 'editor:move-line-up'
@@ -68,6 +70,7 @@
 # Linux Settings
 '.platform-linux atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
+  'ctrl-shift-d': 'user:insert-date'
 
 '.platform-linux atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'editor:move-line-up'
