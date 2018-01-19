@@ -10,6 +10,8 @@ Repository of scripts for my personal environment configurations
 **Atom**  
 `cp ./atom/keymap.cson ~/.atom/keymap.cson`  
 `cp ./atom/init.coffee ~/.atom/init.coffee`  
+`cp ./atom/config.cson ~/.atom/config.cson`  
+`cp ./atom/helpers.js ~/.atom/helpers.js`  
 
 **Automator**  
 `cp ./automator/* ~/Library/Services/`  

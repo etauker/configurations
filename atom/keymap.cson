@@ -37,6 +37,9 @@
 '.platform-win32 atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
   'ctrl-shift-d': 'user:insert-date'
+  'ctrl-shift-j': 'pretty-json:prettify'
+  'ctrl-alt-j': 'user:csv-to-json'
+  'ctrl-alt-c': 'user:json-to-csv'
 
 '.platform-win32 atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'editor:move-line-up'
@@ -49,11 +52,13 @@
   'ctrl-t': 'fuzzy-finder:toggle-file-finder'
 
 
-
 # MacOS Settings
 '.platform-darwin atom-text-editor':
   'cmd-m': 'markdown-preview:toggle'
   'cmd-shift-d': 'user:insert-date'
+  'cmd-shift-j': 'pretty-json:prettify'
+  'cmd-alt-j': 'user:csv-to-json'
+  'cmd-alt-c': 'user:json-to-csv'
 
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
   'cmd-up': 'editor:move-line-up'
@@ -71,6 +76,9 @@
 '.platform-linux atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
   'ctrl-shift-d': 'user:insert-date'
+  'ctrl-shift-j': 'pretty-json:prettify'
+  'ctrl-alt-j': 'user:csv-to-json'
+  'ctrl-alt-c': 'user:json-to-csv'
 
 '.platform-linux atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'editor:move-line-up'

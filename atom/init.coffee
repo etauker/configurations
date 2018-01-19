@@ -10,17 +10,20 @@
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
 
+helper = require './helpers.js'
+
 atom.commands.add 'atom-text-editor',
   'user:insert-date': (event) ->
     editor = @getModel()
 
     now = new Date
-    console.log(now)
+    # console.log(now)
 
     dd = now.getDate()
+    dd = "0#{dd}" if dd < 10
     mm = now.getMonth()
     mm+= 1
-    mm = "0#{mm}" if mm.length = 1
+    mm = "0#{mm}" if mm < 10
     yyyy = now.getFullYear()
     day = ""
 
@@ -33,3 +36,35 @@ atom.commands.add 'atom-text-editor',
     day = "Saturday"        if now.getDay() == 6
 
     editor.insertText("[#{dd}/#{mm}/#{yyyy}] #{day}")
+
+
+
+
+atom.commands.add 'atom-text-editor',
+  'user:csv-to-json': (event) ->
+    console.log("user:csv-to-json")
+    editor = @getModel()
+
+    editor.setText(helper.csvToJson(editor.getText()))
+    atom.commands.dispatch(atom.views.getView(atom.workspace), "pretty-json:prettify")
+    editor.setGrammar(atom.grammars.grammarForScopeName('source.json'))
+
+atom.commands.add 'atom-text-editor',
+  'user:json-to-csv': (event) ->
+    console.log("user:json-to-csv")
+    editor = @getModel()
+
+    editor.setText(helper.jsonToCsv(editor.getText()))
+    # atom.commands.dispatch(atom.views.getView(atom.workspace), "pretty-json:prettify")
+    editor.setGrammar(atom.grammars.grammarForScopeName('source.text.plain'))
+
+
+
+
+
+
+atom.contextMenu.add {
+     # '.tree-view .file .name[data-name$=\\.csv]': [{label: 'View as JSON', command: 'user:view-csv-as-json'}]
+     # '.tree-view .file .name[data-name$=\\.csv]': [{label: 'View as JSON', command: 'user:csv-to-json'}]
+     'atom-text-editor': [{label: 'View as JSON', command: 'user:csv-to-json'}]
+ }
