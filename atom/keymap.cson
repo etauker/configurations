@@ -33,17 +33,19 @@
 
 
 
-# Windows Settings
-'.platform-win32 atom-text-editor':
+# Windows/Linux Settings
+'.platform-win32 .platform-linux atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
   'ctrl-shift-d': 'user:insert-date'
   'ctrl-shift-j': 'pretty-json:prettify'
   'ctrl-alt-j': 'user:csv-to-json'
   'ctrl-alt-c': 'user:json-to-csv'
+  'ctrl-shift-l': 'editor:split-selections-into-lines'
 
 '.platform-win32 atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'editor:move-line-up'
   'ctrl-down': 'editor:move-line-down'
+  'ctrl-shift-g': 'github:toggle-git-tab'
 
 '.platform-win32 body':
   'ctrl-shift-T': 'pane:reopen-closed-item'
@@ -59,33 +61,15 @@
   'cmd-shift-j': 'pretty-json:prettify'
   'cmd-alt-j': 'user:csv-to-json'
   'cmd-alt-c': 'user:json-to-csv'
+  'cmd-shift-l': 'editor:split-selections-into-lines'
 
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
   'cmd-up': 'editor:move-line-up'
   'cmd-down': 'editor:move-line-down'
+  'cmd-shift-g': 'github:toggle-git-tab'
 
 '.platform-darwin body':
   'cmd-shift-T': 'pane:reopen-closed-item'
 
 '.platform-darwin':
   'cmd-t': 'fuzzy-finder:toggle-file-finder'
-
-
-
-# Linux Settings
-'.platform-linux atom-text-editor':
-  'ctrl-m': 'markdown-preview:toggle'
-  'ctrl-shift-d': 'user:insert-date'
-  'ctrl-shift-j': 'pretty-json:prettify'
-  'ctrl-alt-j': 'user:csv-to-json'
-  'ctrl-alt-c': 'user:json-to-csv'
-
-'.platform-linux atom-workspace atom-text-editor:not([mini])':
-  'ctrl-up': 'editor:move-line-up'
-  'ctrl-down': 'editor:move-line-down'
-
-'.platform-linux body':
-  'ctrl-shift-T': 'pane:reopen-closed-item'
-
-'.platform-linux':
-  'ctrl-t': 'fuzzy-finder:toggle-file-finder'

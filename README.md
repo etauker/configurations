@@ -14,4 +14,4 @@ Repository of scripts for my personal environment configurations
 `cp ./atom/helpers.js ~/.atom/helpers.js`  
 
 **Automator**  
-`cp ./automator/* ~/Library/Services/`  
+`cp -r ./automator/* ~/Library/Services/`  
