@@ -34,13 +34,19 @@
 
 
 # Windows/Linux Settings
-'.platform-win32 .platform-linux atom-text-editor':
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
   'ctrl-m': 'markdown-preview:toggle'
   'ctrl-shift-d': 'user:insert-date'
   'ctrl-shift-j': 'pretty-json:prettify'
   'ctrl-alt-j': 'user:csv-to-json'
   'ctrl-alt-c': 'user:json-to-csv'
   'ctrl-shift-l': 'editor:split-selections-into-lines'
+
+'.platform-win32 .tree-view, .platform-linux .tree-view':
+  'ctrl-k ctrl-w': 'tree-view:open-selected-entry-up'
+  'ctrl-k ctrl-s': 'tree-view:open-selected-entry-down'
+  'ctrl-k ctrl-a': 'tree-view:open-selected-entry-left'
+  'ctrl-k ctrl-d': 'tree-view:open-selected-entry-right'
 
 '.platform-win32 atom-workspace atom-text-editor:not([mini])':
   'ctrl-up': 'editor:move-line-up'
@@ -62,6 +68,12 @@
   'cmd-alt-j': 'user:csv-to-json'
   'cmd-alt-c': 'user:json-to-csv'
   'cmd-shift-l': 'editor:split-selections-into-lines'
+
+'.platform-darwin .tree-view':
+  'cmd-k cmd-w': 'tree-view:open-selected-entry-up'
+  'cmd-k cmd-s': 'tree-view:open-selected-entry-down'
+  'cmd-k cmd-a': 'tree-view:open-selected-entry-left'
+  'cmd-k cmd-d': 'tree-view:open-selected-entry-right'
 
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
   'cmd-up': 'editor:move-line-up'
