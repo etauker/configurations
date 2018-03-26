@@ -41,6 +41,7 @@
   'ctrl-alt-j': 'user:csv-to-json'
   'ctrl-alt-c': 'user:json-to-csv'
   'ctrl-shift-l': 'editor:split-selections-into-lines'
+  'ctrl-alt-u': 'user:uuid'
 
 '.platform-win32 .tree-view, .platform-linux .tree-view':
   'ctrl-k ctrl-w': 'tree-view:open-selected-entry-up'
@@ -68,6 +69,7 @@
   'cmd-alt-j': 'user:csv-to-json'
   'cmd-alt-c': 'user:json-to-csv'
   'cmd-shift-l': 'editor:split-selections-into-lines'
+  'cmd-alt-u': 'user:uuid'
 
 '.platform-darwin .tree-view':
   'cmd-k cmd-w': 'tree-view:open-selected-entry-up'

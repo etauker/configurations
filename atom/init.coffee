@@ -40,6 +40,20 @@ atom.commands.add 'atom-text-editor',
 
 
 
+
+atom.commands.add 'atom-text-editor',
+  'user:uuid': (event) ->
+    editor = @getModel()
+    # pos = editor.getCursorBufferPosition()
+    pos = editor.getCursorBufferPosition()
+    atom.commands.dispatch(atom.views.getView(atom.workspace), "guid-me:generate-guid")
+    editorContents = helper.stripUuidDashes(editor.getText())
+    console.log("user:editorContents  editorContents="+editorContents)
+    editor.setText(editorContents)
+    editor.setCursorBufferPosition(pos)
+    editor.moveToEndOfWord()
+
+
 atom.commands.add 'atom-text-editor',
   'user:csv-to-json': (event) ->
     console.log("user:csv-to-json")
