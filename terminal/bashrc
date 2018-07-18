@@ -63,16 +63,22 @@ export LSCOLORS=fxbxxxxxxxxxxxxxxxfxfx
 
 
 
-
 # Get the current branch from "git branch" command
 alias branch="git branch 2>/dev/null | grep '*' | sed 's/* \(.*\)/\1/'";
 
+# Prepare the variables for styling
+RESET="\[$(tput sgr0)\]"
+RED="${RESET}\[\033[38;5;9m\]"
+YELLOW="${RESET}\[\033[38;5;11m\]"
+GREEN="${RESET}\[\033[38;5;10m\]"
+BLUE="${RESET}\[\033[38;5;14m\]"
+
 # Prepare the individual parts of the top line
-TIME="\[\033[38;5;9m\]\t\[$(tput sgr0)\]";
-USER="\[$(tput sgr0)\]\[\033[38;5;11m\]\u@\h\[$(tput sgr0)\]";
-DIR="\[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]";
-BRANCH="\[\033[38;5;14m\]\$(branch)\[$(tput sgr0)\]";
-NEXT_LINE="\n\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;7m\]$\[$(tput sgr0)\]";
+TIME="${RED}\t";
+USER="${YELLOW}\u@\h${RESET}";
+DIR="${GREEN}\w${RESET}";
+BRANCH="${BLUE}\`branch\`${RESET}";
+NEXT_LINE="\n\[$(tput bold)\]${RESET}\[\033[38;5;7m\]=> ${RESET}";
 
 # Export PS1 and PS2
 export PS1="$TIME $USER $DIR $BRANCH $NEXT_LINE";
