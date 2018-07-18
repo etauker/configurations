@@ -42,6 +42,7 @@
   'ctrl-alt-c': 'user:json-to-csv'
   'ctrl-shift-l': 'editor:split-selections-into-lines'
   'ctrl-alt-u': 'user:uuid'
+  # 'ctrl-l': 'user:uuid'
 
 '.platform-win32 .tree-view, .platform-linux .tree-view':
   'ctrl-k ctrl-w': 'tree-view:open-selected-entry-up'
