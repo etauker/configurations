@@ -27,7 +27,9 @@
                 "name": "shared",
                 "repository": "https://github.com/etauker/config-atom",
                 "branch": "shared"
-            },
+            }
+        ],
+        "sublime": [
             {
                 "name": "personal",
                 "repository": "https://github.com/etauker/config-sublime",
@@ -60,6 +62,13 @@
             "tools": ["atom"],
             "settings": ["personal", "shared"],
             "workspace": "E:\\My Projects\\Git"
+        },
+        {
+            "name": "home-dev",
+            "platform": "Ubuntu",
+            "tools": ["atom"],
+            "settings": ["personal", "shared"],
+            "workspace": "/home/etauker/workspace"
         }
     ]
 }
