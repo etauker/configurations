@@ -2,13 +2,13 @@
     "tools": [
         {
             "name": "atom",
-            "repository": "git@github.com:etauker/config-atom",
+            "repository": "git@github.com:etauker/config-atom.git",
             "branch": "master",
             "command": "node setup.js"
         },
         {
             "name": "sublime",
-            "repository": "git@github.com:etauker/setup-sublime",
+            "repository": "git@github.com:etauker/setup-sublime.git",
             "branch": "master",
             "command": "bash setup.bash"
         }
@@ -17,29 +17,29 @@
         "atom": [
             {
                 "name": "work",
-                "repository": "git@github.wdf:sap.corp/C5265227/config-atom",
+                "repository": "git@github.wdf:sap.corp/C5265227/config-atom.git",
                 "branch": "work"
             },
             {
                 "name": "personal",
-                "repository": "git@github.com:etauker/config-atom",
+                "repository": "git@github.com:etauker/config-atom.git",
                 "branch": "personal"
             },
             {
                 "name": "shared",
-                "repository": "git@github.com:etauker/config-atom",
+                "repository": "git@github.com:etauker/config-atom.git",
                 "branch": "shared"
             }
         ],
         "sublime": [
             {
                 "name": "personal",
-                "repository": "git@github.com:etauker/config-sublime",
+                "repository": "git@github.com:etauker/config-sublime.git",
                 "branch": "personal"
             },
             {
                 "name": "shared",
-                "repository": "git@github.com:etauker/config-sublime",
+                "repository": "git@github.com:etauker/config-sublime.git",
                 "branch": "shared"
             }
         ]
