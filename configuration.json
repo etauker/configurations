@@ -4,13 +4,15 @@
             "name": "atom",
             "repository": "git@github.com:etauker/config-atom.git",
             "branch": "master",
-            "command": "node setup.js"
+            "file": "setup.js"
         },
         {
             "name": "sublime",
             "repository": "git@github.com:etauker/setup-sublime.git",
             "branch": "master",
-            "command": "bash setup.bash"
+            "install": "bash setup.bash",
+            "configure": "node configure.js",
+            "backup": "bash backup.bash"
         }
     ],
     "settings": {
