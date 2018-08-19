@@ -73,6 +73,13 @@
             "tools": ["atom"],
             "settings": ["personal", "shared"],
             "workspace": "/home/etauker/workspace"
+        },
+        {
+            "name": "macos",
+            "platform": "macOS",
+            "tools": ["atom"],
+            "settings": ["personal", "shared"],
+            "workspace": "/Volumes/Internal-Workspace/projects"
         }
     ]
 }
