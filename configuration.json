@@ -7,6 +7,12 @@
             "file": "setup.js"
         },
         {
+            "name": "chrome",
+            "repository": "git@github.com:etauker/config-chrome.git",
+            "branch": "master",
+            "file": "main.js"
+        },
+        {
             "name": "sublime",
             "repository": "git@github.com:etauker/setup-sublime.git",
             "branch": "master",
