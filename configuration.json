@@ -80,6 +80,13 @@
             "tools": ["atom"],
             "settings": ["personal", "shared"],
             "workspace": "/Volumes/Internal-Workspace/projects"
+        },
+        {
+            "name": "work-windows",
+            "platform": "Windows",
+            "tools": ["atom"],
+            "settings": ["work", "personal", "shared"],
+            "workspace": "/c/projects"
         }
     ]
 }
