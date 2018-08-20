@@ -76,7 +76,7 @@
         {
             "name": "home-dev",
             "platform": "Ubuntu",
-            "tools": ["atom"],
+            "tools": ["atom", "chrome"],
             "settings": ["personal", "shared"],
             "workspace": "/home/etauker/workspace"
         },
