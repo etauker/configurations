@@ -13,6 +13,12 @@
             "file": "main.js"
         },
         {
+            "name": "chrome",
+            "repository": "git@github.com:etauker/config-chrome.git",
+            "branch": "master",
+            "file": "main.js"
+        },
+        {
             "name": "sublime",
             "repository": "git@github.com:etauker/setup-sublime.git",
             "branch": "master",
@@ -83,7 +89,7 @@
         {
             "name": "home-dev",
             "platform": "Ubuntu",
-            "tools": ["atom"],
+            "tools": ["atom", "chrome"],
             "settings": ["personal", "shared"],
             "workspace": "/home/etauker/workspace"
         },
@@ -93,6 +99,13 @@
             "tools": ["atom", "bash"],
             "settings": ["personal", "shared"],
             "workspace": "/Volumes/Internal-Workspace/projects"
+        },
+        {
+            "name": "work-windows",
+            "platform": "Windows",
+            "tools": ["atom"],
+            "settings": ["work", "personal", "shared"],
+            "workspace": "/c/projects"
         }
     ]
 }
