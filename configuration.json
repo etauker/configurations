@@ -7,6 +7,12 @@
             "file": "setup.js"
         },
         {
+            "name": "bash",
+            "repository": "git@github.com:etauker/config-bash.git",
+            "branch": "master",
+            "file": "main.js"
+        },
+        {
             "name": "sublime",
             "repository": "git@github.com:etauker/setup-sublime.git",
             "branch": "master",
@@ -44,7 +50,14 @@
                 "repository": "git@github.com:etauker/config-sublime.git",
                 "branch": "shared"
             }
-        ]
+        ],
+        "bash": {
+            "configDirectory": "",
+            "backupDirectory": "",
+            "commitMessage": "",
+            "branch": "",
+            "files": []
+        }
     },
     "profiles": [
         {
@@ -77,7 +90,7 @@
         {
             "name": "macos",
             "platform": "macOS",
-            "tools": ["atom"],
+            "tools": ["atom", "bash"],
             "settings": ["personal", "shared"],
             "workspace": "/Volumes/Internal-Workspace/projects"
         }
