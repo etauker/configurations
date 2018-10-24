@@ -104,8 +104,8 @@
             "name": "work-windows",
             "platform": "Windows",
             "tools": ["atom"],
-            "settings": ["work", "personal", "shared"],
-            "workspace": "/c/projects"
+            "settings": ["first", "work", "personal", "shared", "last"],
+            "workspace": "C:\\projects"
         }
     ]
 }
